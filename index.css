@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #A81818;
+  padding: 20px;
+  font-family: 'Caveat', cursive;
+}
+
+.heading{
+  background-color:#262020;
+  color: #efeff2;
+  padding: 1em;
+  border-radius: 75px;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+  text-align: center;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* The width is 3 times the width of a regular column */
+.bigColumn{
+  float: none;
+  width: 99.99%;
+  display: none;/* Hide columns by default */
+
+}
+
+.empty{
+  height: 100px;
+}
+
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #272b30;
+  padding: 10px;
+  color: white;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #8D98CE;
+  cursor: pointer;
+  margin-right: 20px;
+  font-family: 'Caveat', cursive;
+  border-radius: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav{
+  background-color: #272b30;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+footer{
+  background-color: #272b30;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  border-radius: 10px;
+
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: rgb(145, 32, 32);
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: rgb(248, 247, 247);
+   color: white;
+}
+.btn{
+    background-color: rgb(248, 247, 247);
+    color: black;
+    text-decoration: none;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}

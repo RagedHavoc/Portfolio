@@ -1,0 +1,16 @@
+h1 {
+  font-size: 40px;
+  word-break: break-all;
+  text-align: center;
+}
+body {
+  background-color: #A81818;
+  padding: 20px;
+  font-family: 'Caveat', cursive;
+}
+footer{
+  text-align: center;
+}
+p{
+  text-align: center;
+}
